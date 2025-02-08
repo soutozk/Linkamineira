@@ -16,11 +16,11 @@
 
 .light {
   --text-color: rgb(255, 255, 255);
-  --bg-url: url(/assets/fundocell.webp);
-  --surface-color: #0b572c;
-  --stroke-color: rgb(255, 255, 255);
-  --surface-color-hover: #062e17;
-  --highlighht-color: #0b572c;
+  --bg-url: url(/assets/fundofireshadow.png);
+  --surface-color: #14141400;
+  --stroke-color: #bb9f00;
+  --surface-color-hover: #ffffff50;
+  --highlighht-color: #bb9f00;
   --switch-bg-url: url(/assets/moon-stars.svg);
 }
 
@@ -52,6 +52,7 @@ body * {
 
 #profile img {
   width: 154px;
+  border-radius: 50%;
 }
 
 #profile p {
@@ -99,29 +100,6 @@ body * {
   border-radius: 9999px;
 }
 
-.text-top-container {
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.226);
-  box-shadow: rgba(0, 0, 0, 0.356) 0px 2px 4px,
-    rgba(0, 0, 0, 0.212) 0px 7px 13px -3px,
-    rgba(0, 0, 0, 0.425) 0px -3px 0px inset;
-}
-
-.text-top h1 {
-  font-size: 22px;
-  padding: 10px;
-  border-radius: 20px 20px 0px 0px;
-  color: #ffffff;
-}
-
-.text-top p {
-  margin-bottom: 5px;
-  text-align: justify;
-  font-size: 18px;
-  padding: 5px 10px 10px;
-  border-radius: 20px 20px 0px 0px;
-  color: #ffffff;
-}
 .carousel {
   position: relative;
   display: flex;
@@ -175,7 +153,7 @@ ul li a {
   gap: 12px;
   padding: 16px 24px;
   background: var(--surface-color);
-  border: 1px solid var(--stroke-color);
+  border: 2px solid var(--stroke-color);
   border-radius: 45px;
   backdrop-filter: blur(4px);
   text-decoration: none;
@@ -187,9 +165,15 @@ ul li a {
 
 ul li a i {
   position: absolute;
-  left: 16px; /* Ícone à esquerda */
+  left: 20px; /* Ícone à esquerda */
   font-size: 18px;
   color: var(--text-color);
+}
+
+li img {
+  width: 34px;
+  position: absolute;
+  left: 14px;
 }
 
 ul li a:hover {
@@ -203,6 +187,7 @@ ul li a:hover {
   justify-content: center;
   padding: 24px 0;
   font-size: 24px;
+  
 }
 
 #social-links a {
@@ -244,7 +229,7 @@ ion-icon {
   font-size: 1.5rem;
   padding: 10px;
   border-radius: 20px 20px 0px 0px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
 .loc-container {
@@ -269,12 +254,9 @@ iframe {
 }
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(/assets/fundocell.webp);
+    --bg-url: url(/assets/fundofireshadow.png);
   }
 
-  .light {
-    --bg-url: url(/assets/bg-desktop-light_optimized_.webp);
-  }
 }
 
 @keyframes slide-in {
