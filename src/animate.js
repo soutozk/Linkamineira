@@ -1,7 +1,7 @@
 // Animação do contorno
 gsap.to("text", {
   strokeDashoffset: 0,
-  duration: 3,
+  duration: 0.3,
   ease: "power2.inOut",
  
 });
@@ -10,7 +10,7 @@ setTimeout(function () {
   const startAnimation = document.querySelector(".start-animation");
   startAnimation.style.transition = "opacity 1s ease-out";
   startAnimation.style.opacity = 0;
-}, 3000); // Tempo igual à duração da animação do contorno
+}, 300); // Tempo igual à duração da animação do contorno
 
 setTimeout(function () {
   document.querySelector(".start-animation").style.display = "none"; // Esconde a animação
