@@ -1,130 +1,136 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Villa À Mineira</title>
-    <link rel="stylesheet" href="/src/style.css" />
-    <link rel="stylesheet" href="/src/carrossel.css">
-    <link rel="icon" href="/assets/favicon.webp" type="image/x-icon" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
-     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  </head>
-  <body>
-    <div class="start-animation">
-      <svg viewBox="0 0 500 100">
-        <text x="50%" y="50%" text-anchor="middle" dy=".35em" font-size="70">
-          Villa À Mineira
-        </text>
-      </svg>
-    </div>
-    <div id="container" class="container-home" >
-      <div id="profile" class="animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
-        <img src="/assets/Logo.webp" alt="" />
-        <p>@villa.amineira</p>
-      </div>      
-<div>
-   <div class="carousel">
-        <div class="carousel-container">
-          <img src="/assets/Captura de tela 2025-02-07 102923.png" class="carousel-item active" />
-          <img src="/assets/Captura de tela 2025-02-07 103029.png" class="carousel-item behind-left" />
-          <img src="/assets/Captura de tela 2025-02-07 105606.png" class="carousel-item behind-right" />
-        </div>
-      </div>
-     </div>
-
-  <ul>
-    <li class="animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
-      <a href="#">
-        <i class="fas fa-utensils"></i> Almoço - Peça sua marmitex (Retirada das 11h às 14h)
-      </a>
-    </li>
-    <li class="animate__animated animate__fadeInUp" style="animation-delay: 0.8s;">
-      <a href="#">
-        <i class="fas fa-concierge-bell"></i> Cardápio - À La Carte e Executivos <br> (Qua à Dom 14h às 18h)
-      </a>
-    </li>
-    <li class="animate__animated animate__fadeInUp" style="animation-delay: 1s;">
-      <a href="#">
-        <img src="/assets/ifoodlogo.png" alt="" />iFood - Villa À Mineira (Delivery)
-      </a>
-    </li>
-    <li class="animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">
-      <a href="#">
-        <i class="fas fa-hamburger"></i> Cardápio - Jeff Burguer (Hamburgueres)
-      </a>
-    </li>
-    <li class="animate__animated animate__fadeInUp" style="animation-delay: 1.4s;">
-      <a href="#">
-        <i class="fas fa-cocktail"></i> Cardápio - Jeff Burguer (Bebidas e Drinks)
-      </a>
-    </li>
-    <li class="animate__animated animate__fadeInUp" style="animation-delay: 1.6s;">
-      <a href="#">
-        <i class="fas fa-store"></i> Restaurante 11h às 14h (Seg e Ter) / 11h às 18h <br>(Qua à Dom)
-      </a>
-    </li>
-    <li class="animate__animated animate__fadeInUp" style="animation-delay: 1.8s;">
-      <a href="#">
-        <i class="fas fa-hamburger"></i> Hamburgueria - 18h às 23h (Qua a Dom)
-      </a>
-    </li>
-  </ul>
-  </div> 
-      
-<div class="map-container animate__animated animate__fadeInUp" style="animation-delay: 0.2s;--animate-duration: 2s;">
-  <h2>Venha fazer uma visita!</h2>
-  <div class="loc-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15349.94597010194!2d-48.0186386!3d-15.883564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2dca35ed7fdb%3A0xddd9e694660e9dc7!2sVilla%20%C3%80%20Mineira!5e0!3m2!1spt-BR!2sbr!4v1739028665852!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-</div>
-
-</div>
-<br>
-    </div>
-
-   
-<!-- <script>
-  let currentSlide = 0;
-  const slides = document.querySelectorAll('.slide');
-
-  function changeSlide(direction) {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide + direction + slides.length) % slides.length;
-    slides[currentSlide].classList.add('active');
-  }
-</script> -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="src/animate.js"></script>
-    <script>
-      let index = 0;
-      const images = document.querySelectorAll(".carousel-item");
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Villa À Mineira</title>
+      <link rel="stylesheet" href="/src/style.css" />
+      <link rel="stylesheet" href="/src/carrossel.css">
+      <link rel="icon" href="/assets/favicon.webp" type="image/x-icon" />
+      <link
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+         rel="stylesheet"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+         />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+   </head>
+   <body>
+      <div class="start-animation">
+         <svg viewBox="0 0 500 100">
+            <text x="50%" y="50%" text-anchor="middle" dy=".35em" font-size="70">
+               Villa À Mineira
+            </text>
+         </svg>
+         </div>
+         <div id="container" class="container-home" >
+         <div id="profile" class="animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+            <img src="/assets/Logo.webp" alt="" />
+            <p>@villa.amineira</p>
+         </div>
+         <div>
+            <div class="carousel">
+               <div class="carousel-container">
+                  <img src="/assets/Captura de tela 2025-02-07 102923.png" class="carousel-item active" />
+                  <img src="/assets/Captura de tela 2025-02-07 103029.png" class="carousel-item behind-left" />
+                  <img src="/assets/Captura de tela 2025-02-07 105606.png" class="carousel-item behind-right" />
+               </div>
+            </div>
+         </div>
+         <ul>
+            <li class="animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+               <a href="#">
+               <i class="fas fa-utensils"></i> Almoço - Peça sua marmitex (Retirada das 11h às 14h)
+               </a>
+            </li>
+            <li class="animate__animated animate__fadeInUp" style="animation-delay: 0.8s;">
+               <a href="#">
+               <i class="fas fa-concierge-bell"></i> Cardápio - À La Carte e Executivos <br> (Qua à Dom 14h às 18h)
+               </a>
+            </li>
+            <li class="animate__animated animate__fadeInUp" style="animation-delay: 1s;">
+               <a href="#">
+               <img src="/assets/ifoodlogo.png" alt="" />iFood - Villa À Mineira (Delivery)
+               </a>
+            </li>
+            <li class="animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">
+               <a href="#">
+               <i class="fas fa-hamburger"></i> Cardápio - Jeff Burguer (Hamburgueres)
+               </a>
+            </li>
+            <li class="animate__animated animate__fadeInUp" style="animation-delay: 1.4s;">
+               <a href="#">
+               <i class="fas fa-cocktail"></i> Cardápio - Jeff Burguer (Bebidas e Drinks)
+               </a>
+            </li>
+            <li class="animate__animated animate__fadeInUp" style="animation-delay: 1.6s;">
+               <a href="#">
+               <i class="fas fa-store"></i> Restaurante 11h às 14h (Seg e Ter) / 11h às 18h <br>(Qua à Dom)
+               </a>
+            </li>
+            <li class="animate__animated animate__fadeInUp" style="animation-delay: 1.8s;">
+               <a href="#">
+               <i class="fas fa-hamburger"></i> Hamburgueria - 18h às 23h (Qua a Dom)
+               </a>
+            </li>
+         </ul>
+         <div id="social-links">
+            <a href="https://www.instagram.com/tapiocamassareal" class="animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+               <ion-icon name="logo-instagram" role="img" class="md hydrated"></ion-icon>
+            </a>
+            <a href="#" class="animate__animated animate__fadeInUp" style="animation-delay: 0.8s;">
+               <ion-icon name="logo-facebook" role="img" class="md hydrated"></ion-icon>
+            </a>
+            <a href="#" class="animate__animated animate__fadeInUp" style="animation-delay: 1s;">
+               <ion-icon name="location-outline" role="img" class="md hydrated"></ion-icon>
+            </a>
+         </div>
+         <div class="map-container animate__animated animate__fadeInUp" style="animation-delay: 0.2s;--animate-duration: 2s;">
+            <h2>Venha fazer uma visita!</h2>
+            <div class="loc-container">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15349.94597010194!2d-48.0186386!3d-15.883564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2dca35ed7fdb%3A0xddd9e694660e9dc7!2sVilla%20%C3%80%20Mineira!5e0!3m2!1spt-BR!2sbr!4v1739028665852!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+         </div>
+       </div>
     
-      function updateCarousel() {
-        images.forEach(img => img.classList.remove("active", "behind-left", "behind-right"));
-        
-        images[index].classList.add("active");
-        images[(index + 1) % images.length].classList.add("behind-right");
-        images[(index + 2) % images.length].classList.add("behind-left");
-        
-        index = (index + 1) % images.length;
-      }
+ 
     
-      setInterval(updateCarousel, 2000);
-    </script>
-  </body>
+      <!-- <script>
+         let currentSlide = 0;
+         const slides = document.querySelectorAll('.slide');
+         
+         function changeSlide(direction) {
+           slides[currentSlide].classList.remove('active');
+           currentSlide = (currentSlide + direction + slides.length) % slides.length;
+           slides[currentSlide].classList.add('active');
+         }
+         </script> -->
+      <script
+         type="module"
+         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+         ></script>
+      <script
+         nomodule
+         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+         ></script>
+      <script src="src/animate.js"></script>
+      <script>
+         let index = 0;
+         const images = document.querySelectorAll(".carousel-item");
+         
+         function updateCarousel() {
+           images.forEach(img => img.classList.remove("active", "behind-left", "behind-right"));
+           
+           images[index].classList.add("active");
+           images[(index + 1) % images.length].classList.add("behind-right");
+           images[(index + 2) % images.length].classList.add("behind-left");
+           
+           index = (index + 1) % images.length;
+         }
+         
+         setInterval(updateCarousel, 2000);
+      </script>
+   </body>
 </html>
